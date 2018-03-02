@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+{% load staticfiles %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Divyansh</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="{% static 'personal/img/favicon.ico' %}" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="{% static 'personal/img/apple-touch-icon.png' %}"/>
+<link rel="apple-touch-icon" sizes="72x72" href="{% static 'personal/img/apple-touch-icon-72x72.png' %}"/>
+<link rel="apple-touch-icon" sizes="114x114" href="{% static 'personal/img/apple-touch-icon-114x114.png' %}"/>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="{% static 'personal/css/bootstrap.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'personal/fonts/font-awesome/css/font-awesome.css' %}"/>
+
+
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="{% static 'personal/css/style.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'personal/css/nivo-lightbox/nivo-lightbox.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'personal/css/nivo-lightbox/default.css' %}"/>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="{% static 'personal/js/modernizr.custom.js' %}"></script>
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="container">
+      <div class="row">
+        <div class="intro-text">
+          <h1>I'm Divyansh</h1>
+          <hr>
+          <p>Entusiastic Computer Science Learner</p>
+          <a href="#about" class="btn btn-default btn-lg page-scroll">Know More About Me</a> </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Navigation -->
+<div id="nav">
+  <nav class="navbar navbar-custom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden"> <a href="#page-top"></a> </li>
+          <li> <a class="page-scroll" href="#about">About</a> </li>
+          <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
+          <li> <a class="page-scroll" href="#contact">Contact</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>About Me</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center"><img src="{% static 'personal/img/about.jpg' %}" class="img-responsive"></div>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="about-text">
+          <p>Hey I'm Divyansh Kumar, a designer and a developer.</p>
+          <p>I'm originally from Moradabad, Uttar pradesh but these days i live in Greater Noida</p>
+		  <p>I'm pursuing my B.Tech from Galgotias College of Engineering</p>
+          <a href="#portfolio" class="btn btn-default btn-lg page-scroll">My Portfolio</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Portfolio</h2>
+      <hr>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".graphic">Graphic Design</a></li>
+            <li><a href="#" data-filter=".illustration">My Images</a></li>
+            <li><a href="#" data-filter=".photography">My Photography</a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-3 col-lg-3 graphic">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'personal/img/portfolio/CT diwali2.jpg' %}" title="Diwali Poster" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="{% static 'personal/img/portfolio/CT diwali2.jpg' %}" class="img-responsive" alt="Diwali Poster"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 illustration">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'personal/img/portfolio/IMG_5403.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="{% static 'personal/img/portfolio/IMG_5403.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 graphic">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'personal/img/portfolio/dIWALI FUSION 1.jpg' %}" title="Diwali Poster" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="{% static 'personal/img/portfolio/dIWALI FUSION 1.jpg' %}" class="img-responsive" alt="Diwali Poster"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 graphic">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'personal/img/portfolio/unifest logo 2.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="{% static 'personal/img/portfolio/unifest logo 2.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 illustration">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'personal/img/portfolio/IMG_5391.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="{% static 'personal/img/portfolio/IMG_5391.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 photography">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'personal/img/portfolio/DSC_0239.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="{% static 'personal/img/portfolio/DSC_0239.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 photography">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'personal/img/portfolio/original pic.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="{% static 'personal/img/portfolio/original pic.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 illustration">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'personal/img/portfolio/IMG_5329.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="{% static 'personal/img/portfolio/IMG_5329.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 photography">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'personal/img/portfolio/DSC_0305.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+              </div>
+              <img src="{% static 'personal/img/portfolio/DSC_0305.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Get In Touch</h2>
+      <hr>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+	 {% for contactForm in object_list %}
+       <form name="sentMessage" id="contactForm" novalidate>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div id="success"></div>
+        <button type="submit" class="btn btn-default btn-lg">Send Message</button>
+       </form>
+	  {% endfor %}
+	<div class="social">
+        <ul>
+          <li><a href="https://www.facebook.com/divyansh.kumar.90260"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/beingdk_/?hl=en"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container text-center">
+    <div class="fnav">
+      <p>Copyright &copy; 2018 Divyansh Kumar. Designed by Divyansh Kumar</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="{% static 'personal/js/jquery.1.11.1.js' %}"></script> 
+<script type="text/javascript" src="{% static 'personal/js/bootstrap.js' %}"></script> 
+<script type="text/javascript" src="{% static 'personal/js/SmoothScroll.js' %}"></script> 
+<script type="text/javascript" src="{% static 'personal/js/nivo-lightbox.js' %}"></script> 
+<script type="text/javascript" src="{% static 'personal/js/jquery.isotope.js' %}"></script> 
+<script type="text/javascript" src="{% static 'personal/js/jqBootstrapValidation.js' %}"></script> 
+<script type="text/javascript" src="{% static 'personal/js/contact_me.js' %}"></script> 
+<script type="text/javascript" src="{% static 'personal/js/main.js' %}"></script>
+
+</body>
+</html>
